@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import Alert from './components/Alert';
 import { useState } from 'react';
+import QrCode from './components/QrCode';
+import BarCode from './components/BarCode';
 
 function App() {
 
@@ -28,13 +30,23 @@ function App() {
     },time)
   } 
 
+  let NavObj = {
+    title: 'Pocket Services',
+    Link1: 'Text Util',
+    Link2: 'About',
+    Link3: 'Make QR Code',
+    Link4: 'Make BarCode',
+  }
+
   return (
     <Router>
       <div>
-        <Navbar title="Text Utils" link1="Home" link2="About" />
+        <Navbar NavData={NavObj}/>
         <Alert alert={alert}/>
         <Routes>
           <Route exact path="/" element={<From heading="Modify your text ~" placeholder="Start typing..." propAlert={propAlert} />}/>
+          <Route exact path="/QrCode" element={<QrCode/>}/>
+          <Route exact path="/barcode" element={<BarCode/>}/>
           <Route exact path="/about" element={<About/>}/>
         </Routes>
       </div>

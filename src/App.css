@@ -1,3 +1,38 @@
 .clearTxt{
     cursor: pointer;
 }
+.loader img{
+    max-width: 90px;
+}
+.loader_box{
+    position: relative;
+}
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.whole_input_box{
+    min-height: 266px;
+}
+.Cust_btn{
+    padding: 4px 10px;
+    background-color: #d3e9ff;
+    border: 1px solid #d3e9ff;
+    outline: none;
+    border-radius: 6px;
+}
+.Cust_btn:hover{
+    background-color: white;
+}
+.input_style{
+    border: none;
+    outline: none;
+    padding: 5px;
+    box-shadow: 1px 1px 8px 0px #7d7777;
+    border-radius: 6px;
+}
+.Print_dwn_btn{
+    column-gap: 10px;
+}
