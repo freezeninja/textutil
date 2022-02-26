@@ -23,6 +23,9 @@
     outline: none;
     border-radius: 6px;
 }
+.Cust_btn.active{
+    background-color: #b3cfcc;
+}
 .Cust_btn:hover{
     background-color: white;
 }
@@ -33,6 +36,29 @@
     box-shadow: 1px 1px 8px 0px #7d7777;
     border-radius: 6px;
 }
-.Print_dwn_btn{
-    column-gap: 10px;
+.Print_dwn_btn,.color_box, .direction_button{
+    column-gap: 20px;
+}
+.per_color_input{
+    border: none;
+    outline: none !important;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+.preview_box{
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+}
+.preview{
+    position: relative;
+    position: relative;
+}
+.Preview_para{
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 0 6px;
+    border-radius: 0 0 4px 4px;
 }

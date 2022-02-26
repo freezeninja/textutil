@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 
 export default function Navbar(props) {
-    const {Link1, Link2, Link3, Link4} = props.NavData
+    const {Link1, Link2, Link3, Link4, Link5} = props.NavData
     let navArr = [
         {
             id: 1,
@@ -24,6 +24,11 @@ export default function Navbar(props) {
         },
         {
             id: 4,
+            title: Link5,
+            linkTo: 'color_generate'
+        },
+        {
+            id: 5,
             title: Link2,
             linkTo: 'about'
         }

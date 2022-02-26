@@ -12,6 +12,7 @@ import Alert from './components/Alert';
 import { useState } from 'react';
 import QrCode from './components/QrCode';
 import BarCode from './components/BarCode';
+import GenerateColor from './components/GenerateColor';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
     Link2: 'About',
     Link3: 'Make QR Code',
     Link4: 'Make BarCode',
+    Link5: 'Generate Color'
   }
 
   return (
@@ -48,6 +50,7 @@ function App() {
           <Route exact path="/QrCode" element={<QrCode/>}/>
           <Route exact path="/barcode" element={<BarCode/>}/>
           <Route exact path="/about" element={<About/>}/>
+          <Route exact path="/color_generate" element={<GenerateColor propAlert={propAlert}/>}/>
         </Routes>
       </div>
     </Router>

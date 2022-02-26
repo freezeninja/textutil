@@ -22,9 +22,6 @@ export default function QrCode() {
         }
         callback()
     }, [childVal])
-
-
-
     return (
         <div className="container">
             <InputImgBox Parentval={Parentval} imgUrl={imgUrl} isLoading={isLoading} />
