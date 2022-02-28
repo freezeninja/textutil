@@ -1,6 +1,24 @@
-.clearTxt{
-    cursor: pointer;
+
+/* utilities  */
+.Print_dwn_btn,.color_box, .direction_button{
+    column-gap: 20px;
 }
+.Cust_btn{
+    padding: 4px 10px;
+    background-color: #d3e9ff;
+    border: 1px solid #d3e9ff;
+    outline: none;
+    border-radius: 6px;
+}
+.Cust_btn.active{
+    background-color: #a3a3a3;
+}
+.Cust_btn:hover{
+    background-color: white;
+}
+
+
+/* loading  */
 .loader img{
     max-width: 90px;
 }
@@ -13,22 +31,15 @@
     left: 50%;
     transform: translate(-50%,0%);
 }
+
+
+/* input Image Box  */
 .whole_input_box{
     min-height: 266px;
 }
-.Cust_btn{
-    padding: 4px 10px;
-    background-color: #d3e9ff;
-    border: 1px solid #d3e9ff;
-    outline: none;
-    border-radius: 6px;
-}
-.Cust_btn.active{
-    background-color: #b3cfcc;
-}
-.Cust_btn:hover{
-    background-color: white;
-}
+
+
+/* qr code and bar code input  */
 .input_style{
     border: none;
     outline: none;
@@ -36,9 +47,9 @@
     box-shadow: 1px 1px 8px 0px #7d7777;
     border-radius: 6px;
 }
-.Print_dwn_btn,.color_box, .direction_button{
-    column-gap: 20px;
-}
+
+
+/* generate color  */
 .per_color_input{
     border: none;
     outline: none !important;
@@ -61,4 +72,38 @@
     color: black;
     padding: 0 6px;
     border-radius: 0 0 4px 4px;
+}
+
+/* from  */
+.clearTxt{
+    cursor: pointer;
+}
+
+/* copy  */
+.copy{
+    cursor: pointer;
+}
+.copy:hover {
+    color: #a3a3a3;
+}
+.from_container, .color_container {
+    position: relative;
+}
+.copy_form, .copy_color{
+    position: absolute;
+}
+.copy_form{
+    top: 18%;
+    right: 2%;
+}
+.copy_color{
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media(max-width: 900px){
+    /* generate color  */
+    .color_box, .direction_button{
+        overflow-x: scroll;
+    }
 }
